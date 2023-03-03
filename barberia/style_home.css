@@ -1,0 +1,210 @@
+header{
+    background: #bbbbbb37;
+    padding: 20px 0;
+}
+
+.caja{
+    width: 940px;
+    position: relative;
+    margin: 0 auto;
+}
+
+.menu{
+    position: absolute;
+    top: 114px;
+    right: 0px;
+}
+
+.item{
+    display: inline;
+}
+
+.item_a{
+    text-transform: uppercase;
+    color: #000000;
+    font-weight: bold;
+    font-size: 22px;
+    text-decoration: none;
+    margin-left: 15px;
+}
+
+.item_a:hover{
+    color: #e34040;
+    font-size: 23px;
+    text-decoration: underline;
+}
+
+/* main */
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    background: radial-gradient(white, pink, purple);
+}
+
+#banner{
+    width: 100%;
+}
+
+/*Selecciona solo lo p hijos de main elemento > hijo 
+main > p{
+    background: red;
+}
+*/
+
+/*Selecciona un p que viene despues de la imagen 
+img + p{
+    background: green;
+}
+*/
+
+/*Selecciona a todos lo p que vienen despues de la imagen > hijo 
+main ~ p{
+    background: black;
+}
+*/
+
+/*Selecciona los p menos el que tenga el id:mision
+.principal p:not(#mision){
+    background: red;
+}
+*/
+
+.principal{
+    padding: 2em 0 0;
+    width: 940px;
+    margin: 0 auto;
+}
+
+.title_principal{
+    text-align: center;
+    font-size: 2em;
+    margin: 0 0 1em;
+    clear: left;
+}
+
+.title_principal::first-letter{
+    font-weight: bold;
+}
+
+/*
+.title_principal::before{
+    content: "[";
+}
+
+.title_principal::after{
+    content: "]";
+}
+*/
+
+.utencilio{
+    width: 120px;
+    float: left;
+    margin: 22px 20px 22px 0;
+}
+
+.principal p{
+    margin: 0 0 1em;
+}
+
+.mision{
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.principal em{
+    font-style: italic;
+}
+
+.mapa{
+    padding: 2em 0;
+    width: 940px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.mapa p{
+    padding: 0 0 2em;
+    text-align: center;
+}
+
+.video{
+    text-align: center;
+    padding: 2em 0;
+    width: 940px;
+    margin: 0 auto;
+}
+
+.diferenciales{
+    padding: 0 0 2em;
+    width: 940px;
+    margin: 0 auto;
+}
+
+.contenido-diferenciales{
+    width: 750px;
+    margin: 0 auto;
+}
+
+.ul-items{
+    width: 50%;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.items{
+    line-height: 1.5;
+}
+
+.items::before{
+    content: "\1F31F";
+}
+/*El primer item li se ponga en negrita
+.items:first-child{
+    font-weight: bold;
+}
+*/
+
+.items:hover{
+    font-weight: bold;
+}
+
+/*para hacer sombra una imagen: box-shadow
+  para hacer sombra una imagen: text-shadow*/
+.image{
+    width: 50%;
+    transition: 600ms;
+    box-shadow: 5px 5px 10px #000000;
+
+}
+
+.image:hover{
+    opacity: 0.7;
+}
+
+/* fin */
+
+footer{
+    background: url(img/products/bg.jpg);
+    text-align: center;
+    padding: 40px;
+}
+
+.footer-copyright{
+    color: #ffffff;
+    font-size: 13px;
+}
+
+@media screen and (max-width:480px) {
+    .logo{
+        text-align: center;
+    }
+    .menu{
+        position: static;
+    }
+    .caja, .principal, .mapa, .diferenciales, .video, iframe, .contenido-diferenciales{
+        width: auto;
+    }
+    .ul-items, .image{
+        width: 100%;
+    }
+}
